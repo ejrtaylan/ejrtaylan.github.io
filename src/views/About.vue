@@ -9,14 +9,14 @@
         I specialize in UI/UX and gameplay mechanics, with interest in narratives and level and sound design.
       </div>
 
-      <div style="margin-top: 20px;">Here are some <router-link to="/game-projects"> projects </router-link> I've worked on, either for school or as a personal project.   
+      <div style="margin-top: 20px;">Here are some <router-link to="/game-projects">projects</router-link> I've worked on, either for school or as a personal project.   
         Here's some of my <router-link to="/other-projects">skills</router-link> and courses/certifications I've taken, and here is my <router-link to="/resume">resume</router-link>.</div>
 
       <div style="margin-top: 40px;">I'm <strong>currently looking for a job</strong> as a game developer. You can reach me at <a href="mailto:ejrtaylan@gmail.com">ejrtaylan@gmail.com</a> or <router-link to="/contact">through here</router-link>.</div>
     </div>
 
     <div class="photo">
-      <img src="img/avatar.png" alt="Avatar of John" /> 
+      <img src="img/photo.png" alt="Me!" /> 
     </div>
 
     <div style="clear:both"></div>
