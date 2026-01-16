@@ -1,16 +1,18 @@
 <template>
   <div style="margin-bottom: 80px;">
-    <h1>Hello!</h1>
+    <h1>Hello there!</h1>
 
     <div class="paragraph">
       <div>
-        I'm <strong>John Matrix</strong>, a former Delta Force operative, now a hobbyist lumberjack.<br/>
-        I spend my days living alone with my daughter Jenny, and cutting trees and carrying trunks around to keep in shape.
+        I'm <strong>EJ Taylan</strong>, a game developer and college undergraduate based in Santa Rosa, Laguna. <br/>
+        Currently I'm pursuing a Bachelor of Science in Interactive Entertainment major in Game Development from DLSU-Laguna.
+        I specialize in UI/UX and gameplay mechanics, with interest in narratives and level and sound design.
       </div>
 
-      <div style="margin-top: 20px;">I've worked on  <router-link to="/game-projects">stuff</router-link>, on <router-link to="/other-projects">other stuff</router-link>, and took part in <router-link to="/resume">a few things</router-link> as well.</div>
+      <div style="margin-top: 20px;">Here are some <router-link to="/game-projects"> projects </router-link> I've worked on, either for school or as a personal project.
+        <router-link to="/other-projects">Here's</router-link> some of my skills and courses/certifications I've taken, and here is my <router-link to="/resume">resume</router-link>.</div>
 
-      <div style="margin-top: 40px;">I'm <strong>currently looking for a job</strong> as a monk, like my good friend John Rambo did a few years back. You can reach me at <a href="mailto:johnmatrix@deltaforce.us">johnmatrix@deltaforce.us</a> or <router-link to="/contact">through here</router-link>.</div>
+      <div style="margin-top: 40px;">I'm <strong>currently looking for a job</strong> as a game developer. You can reach me at <a href="mailto:ejrtaylan@gmail.com">ejrtaylan@gmail.com</a> or <router-link to="/contact">through here</router-link>.</div>
     </div>
 
     <div class="photo">
