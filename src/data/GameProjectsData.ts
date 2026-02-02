@@ -1,37 +1,50 @@
 import ProjectData from '@/data/ProjectData.ts'
 
 export default [
-    new ProjectData("project-1", "Clockwork Warden", "img/projects/project-1-icon.png", 
+    new ProjectData("project-1", "Clockwork Warden", "img/projects/clockwork-warden-poster.png", 
     `
     <div class="paragraph">
-     <strong>Clockwork Warden</strong> is a 2.5D roguelite based on Hades. My group worked on it for a little over a year and it
-     won first place in a player-vote in an interclass competition.
-     <br/>Image by <a href="https://www.pexels.com/fr-fr/@knownasovan" target="_blank">OVAN</a>.
+     <strong>Clockwork Warden</strong> is a 2.5D hack-and-slash roguelike based on Hades and built in Unity. 
+     A project made for a college course requirement, my team and I worked on it for a year.
+     It won first place in a player-vote in an interclass competition.
     </div>
     <div class="paragraph center">
         <iframe class="youtube" src="https://youtube.com/embed/dvfld1waako" frameborder="0" allowfullscreen></iframe>
     </div>
-    <div class="paragraph center">
-        <a href="https://josiahaviso.itch.io/clockwork-warden" target="_blank"><img src="img/projects/play-store-logo.png" alt="Play Store badge" /></a>
-    </div>
 
     <div class="two-paragraphs">
         <p>
-        Main features :
+        My Contributions:
             <ul>
-            <li>test</li>
-            <li>Some great stuff</li>
-            <li>More awesome stuff</li>
-            <li>And then some</li>
+            <li>Main UI/UX and sound systems developer</li>
+            <li>Worked on sprite animation implementation</li>
+            <li>Worked on game mechanics for early prototype</li>
+            </ul>
+        </p>
+
+        <p>
+        Project Details:
+            <ul>
+            <li>Buit in Unity 2023 for Windows
+            <li>2.5D isometric perspective - characters are 2D, environment is 3D
+            <li>Has 4 weapon skill trees, allowing players to experiment with different builds
+            <li>Multiple levels with environmental hazards and unique layouts, including a boss level
             </ul>
         </p>
     </div>
 
-    <div class="paragraph center">
-        <img class="phone-screenshot" src="https://fakeimg.pl/300x534/" alt="Optimistic Chubby Screenshot" />
-        <img class="phone-screenshot" src="https://fakeimg.pl/300x534/" alt="Optimistic Chubby Screenshot" />
+    <div class="paragraph">
+        <div class="notice">
+        Windows build available on <a href="https://josiahaviso.itch.io/clockwork-warden" target="_blank">itch.io</a>.
+        Source code is available on <a href="https://github.com/DevNikz/Project-Hades" target="_blank">GitHub</a>.
+        </div>
     </div>
-    `, "#23bd69", true),
+
+    <div class="paragraph center">
+        <img class="pc-screenshot" src="img/projects/clockwork-cronos.png" alt="Boss level Screenshot" />
+        <img class="pc-screenshot" src="img/projects/clockwork-level.png" alt="Regular level Screenshot" />
+    </div>
+    `, "#977005", true),
     new ProjectData("project-2", "Balete Falls", "img/projects/project-2-icon.png", `
     <div class="paragraph">
         <strong>Optimistic Chubby Blog</strong> is a thing of beauty that I am so proud of. I could write about it for hours.
