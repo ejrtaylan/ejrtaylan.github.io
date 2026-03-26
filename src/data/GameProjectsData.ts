@@ -1,12 +1,13 @@
-import ProjectData from '@/data/ProjectData.ts'
+import ProjectData from '@/data/ProjectData'
 
 export default [
+    //-----------------------------------------------------------------CLOCKWORK WARDEN-----------------------------------------------------------------------
     new ProjectData("project-1", "Clockwork Warden", "img/projects/clockwork-warden-poster.png", 
     `
     <div class="paragraph">
      <strong>Clockwork Warden</strong> is a 2.5D hack-and-slash roguelike based on Hades and built in Unity. 
-     A project made for a college course requirement, my team and I worked on it for a year.
-     It won first place in a player-vote in an interclass competition.
+     Take on the role of the Clockwork Warden, plunging into the depths of the Movement to detain the deviant Clockworks.
+     Built over the course of a year by my group Lethal Tempo, the game won first place in an inter-class competition held in our IEPRJ course.
     </div>
     <div class="paragraph center">
         <iframe class="youtube" src="https://youtube.com/embed/dvfld1waako" frameborder="0" allowfullscreen></iframe>
@@ -14,21 +15,22 @@ export default [
 
     <div class="two-paragraphs">
         <p>
-        My Contributions:
+        My Role:
             <ul>
-            <li>Main UI/UX and sound systems developer</li>
-            <li>Worked on sprite animation implementation</li>
-            <li>Worked on game mechanics for early prototype</li>
+            <li>Main UI/UX, sound systems, and sprite developer</li>
+            <li>Developed insta-kill mechanic for early stealth-based prototype</li>
+            <li>Worked on player abilities' selection and implementation</li>
+            <li>Implemented every in-game sprite and animation</li> 
             </ul>
         </p>
 
         <p>
         Project Details:
             <ul>
-            <li>Buit in Unity 2023 for Windows
-            <li>2.5D isometric perspective - characters are 2D, environment is 3D
+            <li>Built in Unity 2023 for Windows, using C#
+            <li>2.5D isometric perspective
             <li>Has 4 weapon skill trees, allowing players to experiment with different builds
-            <li>Multiple levels with environmental hazards and unique layouts, including a boss level
+            <li>Multiple levels with unique layouts and environmental hazards, including a boss level
             </ul>
         </p>
     </div>
@@ -42,32 +44,46 @@ export default [
 
     <div class="paragraph center">
         <img class="pc-screenshot" src="img/projects/clockwork-cronos.png" alt="Boss level Screenshot" />
-        <img class="pc-screenshot" src="img/projects/clockwork-level.png" alt="Regular level Screenshot" />
+        <img class="pc-screenshot" src="img/projects/clockwork-level.png" alt="Normal level Screenshot" />
     </div>
     `, "#977005", true),
-    new ProjectData("project-2", "Balete Falls", "img/projects/project-2-icon.png", `
+
+    //-----------------------------------------------------------------BALETE FALLS-----------------------------------------------------------------------
+    new ProjectData("project-2", "Balete Falls", "img/projects/balete-falls-poster.png", `
     <div class="paragraph">
-        <strong>Optimistic Chubby Blog</strong> is a thing of beauty that I am so proud of. I could write about it for hours.
-        <br/>Image by <a target="_blank" href="https://www.pexels.com/fr-fr/@adonyi-gabor-604571">Adonyi Gábor</a>.
+        <strong>Balete Falls</strong> is a 3D survival horror game based around the myth of the Kapre. You play as Hazel Pineda, the lead engineer of BBDC,
+        who must travel through the abandoned Balete Falls park where a Kapre is rumored to lurk. The game was made as our CAPSTONE project and my group, Dark Harvest Studios,
+        currently plans to showcase the game at PGDX 2026.
     </div>
     <div class="paragraph center">
         <iframe class="youtube" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
     </div>
 
-    <div class="paragraph">
-        Main features :
-        <ul>
-        <li>Some stuff</li>
-        <li>Some great stuff</li>
-        <li>More awesome stuff</li>
-        <li>And then some</li>
-        </ul>
+    <div class="two-paragraphs">
+        <p>
+        My Role:
+            <ul>
+            <li>Main UI/UX developer</li>
+            <li>Developed inspection system (based on Resident Evil's inspection system) using Unreal Engine's blueprints</li>
+            <li>Implemented early white room design in-game, worked on the layout of the maze in the final world</li>
+            </ul>
+        </p>
+
+        <p>
+        Project Details:
+            <ul>
+            <li>Built in Unreal Engine 5.6 for Windows, using C++ and Blueprints
+            <li>Survival horror game with a focus on environmental immersion
+            <li>Developed for a research paper concerning Cultural Heritage Appreciation and Environmental Concern among young adults
+            <li>Beautiful and immersive environment with handcrafted assets
+            </ul>
+        </p>
     </div>
 
     <div class="paragraph">
     <div class="notice">
         Windows build available on <a href="https://some.where/nice" target="_blank">itch.io</a>.
-        Source code is available on <a href="https://github.com/yourself" target="_blank">GitHub</a>.
+        Source code is available on <a href="https://github.com/ejrtaylan/Capstone" target="_blank">GitHub</a>.
     </div>
     </div>
 
@@ -77,30 +93,40 @@ export default [
     <img class="pc-screenshot" src="https://fakeimg.pl/534x300/" alt="Singing Addict Screenshot" />
     <img class="pc-screenshot" src="https://fakeimg.pl/534x300/" alt="Singing Addict Screenshot" />
     </div>
-    `, "#5a78af"),
-    new ProjectData("project-3", "Bubble Crash", "img/projects/project-3-icon.png", `
+    `, "#383838", true),
+
+    //-----------------------------------------------------------------BUBBLE CRASH-----------------------------------------------------------------------
+    new ProjectData("project-3", "Bubble Crash", "img/projects/bubble-crash-poster.png", `
     <div class="paragraph">
-        <strong>Drawing Overload</strong> is a thing of beauty that I am so proud of. I could write about it for hours.
-        <br/>Image by <a target="_blank" href="https://www.pexels.com/fr-fr/@miphotography">Miesha Maiden</a>.
+        <strong>Bubble Crash</strong> is a point-and-click stock market simulator where you must make money by buying and selling stocks in order to pay off a loan to the mafia.
+        The player must use the connections they have in order to manipulate the stock market by orchestrating certain events. This game is my group's submission to Global Game Jam 2025.
     </div>
     <div class="paragraph center">
         <iframe class="youtube" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
     </div>
 
-    <div class="paragraph">
-        Main features :
-        <ul>
-        <li>Some stuff</li>
-        <li>Some great stuff</li>
-        <li>More awesome stuff</li>
-        <li>And then some</li>
-        </ul>
+    <div class="two-paragraphs">
+        <p>
+        My Role:
+            <ul>
+            <li>Main UI/UX developer and level designer</li>
+            <li>Helped write narratives for the in-game events</li>
+            </ul>
+        </p>
+
+        <p>
+        Project Details:
+            <ul>
+            <li>Yes</li>
+            </ul>
+        </p>
     </div>
 
     <div class="paragraph">
         <div class="notice">
-        Playable in the browser (WebGL) on <a href="https://some.where/nice" target="_blank">itch.io</a>.
-        Source code is available on <a href="https://github.com/yourself" target="_blank">GitHub</a>.
+        Windows build available on <a href="https://devnikz.itch.io/bubble-crash" target="_blank">itch.io</a>.
+        Source code is available on <a href="https://github.com/JoshAviso/GlobalGameJam" target="_blank">GitHub</a>.
+        Global Game Jam entry <a href="https://globalgamejam.org/games/2025/bubble-crash-7" target="_blank">here</a>.
         </div>
     </div>
 
@@ -110,10 +136,10 @@ export default [
         <img class="pc-screenshot" src="https://fakeimg.pl/534x300/" alt="Drawing Overload Screenshot" />
         <img class="pc-screenshot" src="https://fakeimg.pl/534x300/" alt="Drawing Overload Screenshot" />
     </div>
-    `, "#383838"),
+    `, "#1643ab"),
     new ProjectData("project-4", "FPS RPG", "img/projects/project-4-icon.png", `
     <div class="paragraph">
-    <strong>Eugeneable</strong> is a thing of beauty that I am so proud of. I could write about it for hours.
+    <strong>FPS RPG</strong> is a personal project I have as a very early work in progress. I want it to be a very-simple Fallout like.
     <br/>Image by <a target="_blank" href="https://www.pexels.com/fr-fr/@neo8iam">NEOSiAM 2020</a>.
     </div>
     
@@ -138,32 +164,4 @@ export default [
         <img class="pc-screenshot" src="https://fakeimg.pl/534x300/" alt="Eugeneable Screenshot" />
     </div>
     `, "#e80fb7"),
-    new ProjectData("project-5", "Carpio", "img/projects/project-5-icon.png", `
-    <div class="paragraph">
-        <strong>Cloud Drew Land</strong> is a thing of beauty that I am so proud of. I could write about it for hours.
-        <br/>Image by <a target="_blank" href="https://www.pexels.com/fr-fr/@cottonbro">cottonbro</a>.
-    </div>
-    
-    <div class="paragraph">
-        Main features :
-        <ul>
-        <li>Some stuff</li>
-        <li>Some great stuff</li>
-        <li>More awesome stuff</li>
-        <li>And then some</li>
-        </ul>
-    </div>
-
-    <div class="paragraph">
-        <div class="notice">
-        Windows build available on <a href="https://some.where/nice" target="_blank">itch.io</a>.
-        Source code available on <a href="https://github.com/yourself" target="_blank">GitHub</a>.
-        </div>
-    </div>
-
-    <div class="paragraph center">
-        <img class="pc-screenshot" src="https://fakeimg.pl/534x300/" alt="Cloud Drew Land Screenshot" />
-        <img class="pc-screenshot" src="https://fakeimg.pl/534x300/" alt="Cloud Drew Land Screenshot" />
-        <img class="pc-screenshot" src="https://fakeimg.pl/534x300/" alt="Cloud Drew Land Screenshot" />
-    </div>`, "#e48246")
 ];
