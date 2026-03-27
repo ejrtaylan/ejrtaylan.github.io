@@ -3,15 +3,11 @@
     <h1>Resume</h1>
 
     <div class="paragraph">
-      I'm <strong>John Matrix</strong>, a former Delta Force operative with lots of experience, lots of training and huge muscles.
-      <br />After graduating from kindergarten, I've been enrolled in the army for 25 years, where I learned to destroy things in an amazing number of ways.
-      <br />I joined the Delta Force because I thought it was Greek lessons, but I quickly adapted to this unexpected environment and became a key element.
-      <br />I love teamwork, but I can also go in solo depending on the mission requirements.
-      <br />
-      <br />Right now I'm trying to find inner peace after I've read some personal development books. I'm looking for a monk job so if you have any opportunity feel free to 
-      <router-link to="/contact">contact me</router-link>.
-      <br />
-      <br />Besides war, I'm passionate about firearms, martial arts, explosions, push-ups and flowers.
+      <li>Currently pursuing a BS in Interactive Entertainment major in Game Development at DLSU - Laguna</li>
+      <li>Have extensive experience building projects using Unity and Unreal Engine 5</li>
+      <li>Proficient in C, C++, and C#, with experience using SFML and OpenGL</li>
+      <li>Developed several game prototypes while collaborating with different teams</li>
+      <li>Special interest in computer hardware, level design, narratives, and game mechanics</li>
 
       <div style="margin-top:20px; margin-bottom:20px;">
         <a class="download-link" href="d/resume.pdf" target="_blank"><i class="fa fa-download fa-lg fa-fw"></i> Download as PDF 🇬🇧</a>
@@ -20,6 +16,22 @@
     </div>
     <div class="photo">
       <img src="img/resume-photo.png" alt="Photo of John" />
+    </div>
+
+    <!--Junior Programmer Badge-->
+    <div 
+      data-iframe-width="150" 
+      data-iframe-height="270" 
+      data-share-badge-id="d23b6cf7-05bd-4dc4-8882-119d3d5cb3c4" 
+      data-share-badge-host="https://www.credly.com">
+    </div>
+
+    <!--Unity Essentials Badge-->
+    <div 
+      data-iframe-width="150"
+      data-iframe-height="270" 
+      data-share-badge-id="f80f1ff4-5a88-40d6-b1dd-df3f8f46e713" 
+      data-share-badge-host="https://www.credly.com">
     </div>
 
     <div style="clear:both"></div>
@@ -113,7 +125,18 @@ export default Vue.extend({
   components: {
     SkillRate,
   },
+
+  mounted() {
+    // eslint-disable-next-line @typescript-eslint/ban-ts-ignore
+    // @ts-ignore
+    if(window.CredlyEmbed) {
+      // eslint-disable-next-line @typescript-eslint/ban-ts-ignore
+      // @ts-ignore
+      window.CredlyEmbed.initialize();
+    }
+  }
 });
+
 </script>
 
 <style scoped>
