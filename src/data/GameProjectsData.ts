@@ -137,9 +137,11 @@ export default [
         <img class="pc-screenshot" src="https://fakeimg.pl/534x300/" alt="Drawing Overload Screenshot" />
     </div>
     `, "#1643ab"),
-    new ProjectData("project-4", "FPS RPG", "img/projects/project-4-icon.png", `
+
+    //-----------------------------------------------------------------CARPIO-----------------------------------------------------------------------
+    new ProjectData("project-4", "Carpio", "img/projects/project-4-icon.png", `
     <div class="paragraph">
-    <strong>FPS RPG</strong> is a personal project I have as a very early work in progress. I want it to be a very-simple Fallout like.
+    <strong>Carpio</strong> is a personal project I have as a very early work in progress. It's a 2D sidescroller beat 'em up based on the myth of Bernardo Carpio.
     <br/>Image by <a target="_blank" href="https://www.pexels.com/fr-fr/@neo8iam">NEOSiAM 2020</a>.
     </div>
     

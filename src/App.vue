@@ -53,7 +53,7 @@ html, body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  font-size: 1.1em;
+  font-size: 1.3em;
   line-height: 1.6em;
   text-align: justify;
 }
