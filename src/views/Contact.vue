@@ -3,13 +3,13 @@
     
     <h1>Drop me a line</h1>
 
-    <div style="margin-bottom:40px;">I'm looking for any work opportunities!<br/>Feel free to contact me on any of the following</div>
+    <div style="margin-bottom:40px;">I'm looking for any work opportunities!<br/>Feel free to check out the links:</div>
 
     <ul>
-      <li>
+      <!-- <li>
         <i class="fa fa-user-circle-o fa-lg fa-fw"></i>
         <a href="http://ejrtaylan.github.io" target="_blank">https://ejrtaylan.github.io</a>
-      </li>
+      </li> -->
       <li>
         <i class="fa fa-envelope-o fa-lg fa-fw"></i>
         <a href="mailto:ejrtaylan@gmail.com" target="_blank">ejrtaylan@gmail.com</a>
@@ -26,11 +26,11 @@
         <i class="fa fa-gamepad fa-lg fa-fw"></i>
         <a href="https://trufym.itch.io" target="_blank">trufym.itch.io</a>
       </li>
-      <!-- <li>
-        <i class="fa fa-tumblr fa-lg fa-fw"></i>
-        <a href="https://myblog.tumblr.com" target="_blank">myblog.tumblr.com</a>
-      </li>
       <li>
+        <i class="fa fa-brands fa-discord fa-lg fa-fw"></i>
+        <a href="https://discord.com/users/296173967796862977" target="_blank">My Discord</a>
+      </li>
+      <!-- <li>
         <i class="fa fa-steam fa-lg fa-fw"></i>
         <a href="https://steamcommunity.com/id/me" target="_blank">steam.com/me</a>
       </li> -->
