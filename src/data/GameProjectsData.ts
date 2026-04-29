@@ -56,7 +56,7 @@ export default [
         currently plans to showcase the game at PGDX 2026.
     </div>
     <div class="paragraph center">
-        <iframe class="youtube" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+        <iframe class="youtube" src="https://www.youtube.com/embed/EOL0abgK6Ms" frameborder="0" allowfullscreen></iframe>
     </div>
 
     <div class="two-paragraphs">
@@ -102,7 +102,7 @@ export default [
         The player must use the connections they have in order to manipulate the stock market by orchestrating certain events. This game is my group's submission to Global Game Jam 2025.
     </div>
     <div class="paragraph center">
-        <iframe class="youtube" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+        <iframe class="youtube" src="https://www.youtube.com/embed/Ex5qFfslDyQ" frameborder="0" allowfullscreen></iframe>
     </div>
 
     <div class="two-paragraphs">
