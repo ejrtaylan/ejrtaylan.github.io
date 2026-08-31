@@ -1,14 +1,11 @@
 <template>
   <div id="app">
-    
-    <link rel="stylesheet" href="@/assets/projects/projects.css" type="text/css">
-
     <Header />
-    <div class="main">
+    <main class="main-content">
       <transition name="fade" mode="out-in">
         <router-view/>
       </transition>
-    </div>
+    </main>
     <Footer />
   </div>
 </template>
@@ -17,7 +14,6 @@
 import Vue from 'vue';
 import Header from './components/Header.vue';
 import Footer from './components/Footer.vue';
-import Helpers from './helpers';
 
 export default Vue.extend({
   name: 'App',
@@ -25,14 +21,6 @@ export default Vue.extend({
     Header, Footer
   }
 });
-
-// Preload heavy images or gifs that are used in other pages
-Helpers.preloadImages([
-  "img/projects/clockwork-warden-poster.png",
-  "img/projects/balete-falls-poster.png",
-  "img/projects/bubble-crash-poster.png"
-]);
-
 </script>
 
 <style lang="less">
@@ -41,70 +29,87 @@ Helpers.preloadImages([
 @import './css/variables.less';
 
 html, body {
-  margin: 0px;
+  margin: 0;
   background-color: @bodyBgColor;
+  scroll-behavior: smooth;
 }
 
 #app {
-  background-color: @contentBgColor;
+  min-height: 100vh;
+  background: @contentBgColor;
   color: @textColor;
-
   font-family: 'Karla', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
-  font-size: 1.3em;
-  line-height: 1.6em;
-  text-align: justify;
+  font-size: 18px;
+  line-height: 1.65;
 }
 
-h1, h2, h3, h4, h5 {
-  text-align: left;
+h1,
+h2,
+h3,
+.section-kicker {
+  font-family: 'Oxanium', 'Karla', Helvetica, Arial, sans-serif;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
 }
 
 a {
-  color: @textColor;
+  color: inherit;
   text-decoration: none;
-  opacity: 0.5;
-}
-a:hover, .router-link-exact-active {
-  opacity: 1;
 }
 
-h1 {
-  font-size: 2.5em;
-  font-weight: 100;
-  margin-top: -10px;
-  margin-bottom: 40px;
-  margin-left: -2px; // hack to make it "seem" more aligned with smaller text content
-  line-height: 1.1em;
+button, a {
+  -webkit-tap-highlight-color: transparent;
 }
 
-.main {
-    padding: 12px;
-  }
+img {
+  max-width: 100%;
+}
 
-@media only screen and (min-width: 620px){
+.main-content {
+  min-height: calc(100vh - 160px);
+}
 
-  #app {
-    text-align: left;
-    line-height: 1.8em;
-  }
+.page-shell {
+  width: calc(100% - 40px);
+  max-width: 1180px;
+  margin: 0 auto;
+}
 
-  h1 {
-    margin-top: 0.67em;
-    margin-bottom: 80px;
-    line-height: 0.7em;
-  }
+.section-kicker {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin: 0 0 12px;
+  color: @accentColor;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
 
-  .main {
-    padding: 0px 40px 40px 180px;
-  }
+.section-kicker::before {
+  color: @secondaryAccentColor;
+  content: "//";
+}
 
-  .main, .header, .footer {
-    max-width: 1200px;
-    margin: 0 auto;
-  }
+.section-title {
+  max-width: 760px;
+  margin: 0;
+  font-size: clamp(2rem, 5vw, 4rem);
+  font-weight: 700;
+  letter-spacing: -0.045em;
+  line-height: 1;
+}
+
+.section-intro {
+  max-width: 660px;
+  margin: 22px 0 0;
+  color: @mutedTextColor;
+  font-size: 1.08rem;
 }
 
 .fade-enter-active,
@@ -117,6 +122,27 @@ h1 {
 .fade-enter,
 .fade-leave-active {
   opacity: 0
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html, body {
+    scroll-behavior: auto;
+  }
+
+  *, *::before, *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  #app {
+    font-size: 16px;
+  }
+
+  .page-shell {
+    width: calc(100% - 28px);
+  }
 }
 
 </style>

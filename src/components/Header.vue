@@ -1,23 +1,33 @@
 <template>
-  <div class="header">
-    <div class="nav-bar">
-      <router-link to="/">About me</router-link>
-      <router-link to="/game-projects">Projects</router-link>
-      <!-- <router-link to="/other-projects">Other stuff</router-link> -->
-      <router-link to="/resume">Resume</router-link>
-      <router-link to="/contact">Contact</router-link>
+  <header class="site-header">
+    <div class="header-inner">
+      <nav class="nav-bar" aria-label="Main navigation">
+        <a href="#/" @click.prevent="navigateToSection('projects')">Projects</a>
+        <a href="#/" @click.prevent="navigateToSection('skills')">Skills</a>
+        <a href="#/" @click.prevent="navigateToSection('resume')">Resume</a>
+        <a href="#/" @click.prevent="navigateToSection('contact')">Contact</a>
+      </nav>
     </div>
-  </div>
+  </header>
 </template>
 
 <script lang="ts">
 import Vue from "vue";
+import Helpers from "@/helpers";
 
 export default Vue.extend({
   name: "Header",
-  //   props: {
-  //     msg: String,
-  //   },
+  methods: {
+    navigateToSection(sectionId: string) {
+      if (this.$route.path === "/") {
+        Helpers.scrollToSection(sectionId);
+        return;
+      }
+
+      Helpers.queueSectionScroll(sectionId);
+      this.$router.push("/");
+    }
+  }
 });
 </script>
 
@@ -25,39 +35,86 @@ export default Vue.extend({
 
 @import '../css/variables.less';
 
-.header {
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 30;
   width: 100%;
+  border-bottom: 1px solid fade(@accentColor, 28%);
+  background: fade(@contentBgColor, 90%);
+  backdrop-filter: blur(18px);
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: calc(100% - 40px);
+  max-width: 1180px;
+  min-height: 72px;
+  margin: 0 auto;
 }
 
 .nav-bar {
-  text-align: right;
-  padding: 20px;
-  line-height: 3em;
+  display: flex;
+  align-items: center;
+  gap: 28px;
 }
 
-a {
+.nav-bar a {
+  position: relative;
+  color: @mutedTextColor;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.09em;
   text-transform: uppercase;
-  margin-left: 15px;
-  margin-right: 15px;
-  padding-bottom: 8px;
   white-space: nowrap;
-  display: inline-block;
+  font-family: 'Oxanium', 'Karla', Helvetica, Arial, sans-serif;
+  transition: color 0.2s ease, text-shadow 0.2s ease;
 }
 
-.router-link-exact-active {
-  border: 0px solid @textColor;
-  border-bottom-width: 2px;
+.nav-bar a::before,
+.nav-bar a::after {
+  color: @accentColor;
+  opacity: 0.45;
 }
 
-@media only screen and (max-width: 620px){
-  .nav-bar {
-    line-height: 2em;
+.nav-bar a::before {
+  margin-right: 5px;
+  content: "[";
+}
+
+.nav-bar a::after {
+  margin-left: 5px;
+  content: "]";
+}
+
+.nav-bar a:hover,
+.nav-bar a:focus-visible {
+  color: @textColor;
+  text-shadow: 2px 0 0 fade(@secondaryAccentColor, 55%);
+}
+
+.nav-bar a:hover::before,
+.nav-bar a:hover::after,
+.nav-bar a:focus-visible::before,
+.nav-bar a:focus-visible::after {
+  opacity: 1;
+}
+
+@media only screen and (max-width: 620px) {
+  .header-inner {
+    width: calc(100% - 28px);
+    min-height: 64px;
   }
 
-  a {
-    margin-left: 9px;
-    margin-right: 9px;
-    padding-bottom: 0px;
+  .nav-bar a:nth-child(2),
+  .nav-bar a:nth-child(3) {
+    display: none;
+  }
+
+  .nav-bar {
+    gap: 18px;
   }
 }
 

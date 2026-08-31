@@ -1,34 +1,41 @@
 import Vue from 'vue'
 import VueRouter, { RouteConfig } from 'vue-router'
 import Home from '../views/Home.vue'
+import Helpers from '../helpers'
 
 Vue.use(VueRouter)
+
+const redirectToSection = (sectionId: string) => () => {
+  Helpers.queueSectionScroll(sectionId)
+  return '/'
+}
 
 const routes: Array<RouteConfig> = [
   {
     path: '/',
-    name: 'Root',
-    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
+    name: 'Home',
+    component: Home
   },
   {
-    path: '/resume',
-    name: 'Resume',
-    component: () => import(/* webpackChunkName: "about" */ '../views/Resume.vue')
+    path: '/projects/:slug',
+    name: 'Project Details',
+    component: () => import(/* webpackChunkName: "project-details" */ '../views/ProjectDetails.vue')
   },
   {
     path: '/game-projects',
-    name: 'Game Projects',
-    component: () => import(/* webpackChunkName: "about" */ '../views/GameProjects.vue')
+    redirect: redirectToSection('projects')
   },
   {
-    path: '/other-projects',
-    name: 'Other Projects',
-    component: () => import(/* webpackChunkName: "about" */ '../views/OtherProjects.vue')
+    path: '/resume',
+    redirect: redirectToSection('resume')
   },
   {
     path: '/contact',
-    name: 'Contact',
-    component: () => import(/* webpackChunkName: "about" */ '../views/Contact.vue')
+    redirect: redirectToSection('contact')
+  },
+  {
+    path: '/other-projects',
+    redirect: redirectToSection('projects')
   },
   {
     path: '/404',
@@ -42,7 +49,21 @@ const routes: Array<RouteConfig> = [
 ]
 
 const router = new VueRouter({
-  routes
+  routes,
+  scrollBehavior(to, from, savedPosition) {
+    if (savedPosition) {
+      return savedPosition
+    }
+
+    if (to.hash) {
+      return {
+        selector: to.hash,
+        offset: { x: 0, y: 84 }
+      }
+    }
+
+    return { x: 0, y: 0 }
+  }
 })
 
 export default router
