@@ -70,7 +70,7 @@ export default [
             "Multiple levels with unique layouts, hazards, and a boss encounter"
         ],
         links: [
-            { label: "Play on itch.io", url: "https://josiahaviso.itch.io/clockwork-warden" },
+            { label: "Download on itch.io", url: "https://josiahaviso.itch.io/clockwork-warden" },
             { label: "View source on GitHub", url: "https://github.com/DevNikz/Project-Hades" }
         ],
         screenshots: [
@@ -123,7 +123,7 @@ export default [
         role: "UI/UX, inspection system, level blockout and maze layout",
         tools: ["Unreal Engine 5.6", "C++", "Blueprints", "Level Design"],
         year: "2026",
-        highlight: "Capstone project — planned for PGDX 2026",
+        highlight: "Capstone project",
         featured: true,
         breakdown: "Balete Falls is a 3D survival-horror game based on the myth of the Kapre. Players take the role of Hazel Pineda, the lead engineer of BBDC, and explore an abandoned park where a Kapre is rumored to lurk. The game is being developed by Dark Harvest Studios as our capstone project.",
         videoUrl: "https://www.youtube.com/embed/EOL0abgK6Ms",
@@ -138,6 +138,10 @@ export default [
             "Survival horror focused on environmental immersion",
             "Developed alongside research into cultural heritage appreciation and environmental concern",
             "Features a handcrafted environment inspired by Filipino folklore"
+        ],
+        links: [
+            { label: "Download on itch.io", url: "https://josiahaviso.itch.io/balete-falls" },
+            { label: "View source on GitHub", url: "https://github.com/ejrtaylan/Capstone" }
         ]
     }),
 
@@ -199,7 +203,7 @@ export default [
             "Created as a team project for Global Game Jam 2025"
         ],
         links: [
-            { label: "Play on itch.io", url: "https://devnikz.itch.io/bubble-crash" },
+            { label: "Download on itch.io", url: "https://devnikz.itch.io/bubble-crash" },
             { label: "View source on GitHub", url: "https://github.com/JoshAviso/GlobalGameJam" },
             { label: "View Global Game Jam entry", url: "https://globalgamejam.org/games/2025/bubble-crash-7" }
         ]

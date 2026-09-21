@@ -12,7 +12,7 @@
           <a class="button button-primary" href="#/" @click.prevent="scrollToSection('projects')">View my work</a>
           <a class="button button-secondary" href="d/resume.pdf" target="_blank" rel="noopener noreferrer">Download résumé</a>
         </div>
-        <div class="availability"><span></span> Open to game-development opportunities</div>
+        <!-- <div class="availability"><span></span> Open to game-development opportunities</div> -->
       </div>
 
       <div class="hero-portrait" aria-label="Portrait of EJ Taylan">
@@ -20,17 +20,17 @@
           <img src="img/photo.png" alt="EJ Taylan" width="300" height="300">
         </div>
         <div class="portrait-caption">
-          <strong>BS Interactive Entertainment</strong>
-          <span>DLSU–Laguna · Expected 2027</span>
+          <!-- <strong>BS Interactive Entertainment</strong> -->
+          <!-- <span>DLSU–Laguna · Expected 2027</span> -->
         </div>
       </div>
     </section>
 
     <section id="projects" class="projects-section page-shell" aria-labelledby="projects-title">
       <p class="section-kicker">Selected work</p>
-      <h2 id="projects-title" class="section-title">Games I’ve helped bring to life.</h2>
+      <h2 id="projects-title" class="section-title">Games I’ve worked on.</h2>
       <p class="section-intro">
-        Team projects where I owned concrete systems—from interface and sound to gameplay mechanics and level design.
+        Team projects where I helped create systems from the ground up.
       </p>
 
       <div class="project-list">
@@ -63,7 +63,7 @@
             </ul>
 
             <router-link class="text-link" :to="`/projects/${project.slug}`">
-              View case study <span aria-hidden="true">↗</span>
+              More details <span aria-hidden="true">↗</span>
             </router-link>
           </div>
         </article>
@@ -78,6 +78,7 @@
           <p class="section-intro">
             I enjoy working where implementation and player experience meet: turning design intent into readable interfaces,
             reliable systems, and satisfying moment-to-moment feedback.
+            I like working on player-facing systems. 
           </p>
         </div>
 
@@ -130,15 +131,37 @@
           <p>BS Interactive Entertainment, major in Game Development</p>
           <span class="resume-date">Expected 2027</span>
         </article>
-        <article class="resume-card">
-          <span class="resume-label">Certification</span>
-          <h3>Unity Junior Programmer</h3>
-          <a href="https://www.credly.com/badges/d23b6cf7-05bd-4dc4-8882-119d3d5cb3c4" target="_blank" rel="noopener noreferrer">View credential ↗</a>
+        <article class="resume-card resume-card-small">
+          <div>
+            <span class="resume-label">Certification</span>
+            <h3>Unity Junior Programmer</h3>
+          </div>
+
+          <a
+            class="credential-link"
+            href="https://www.credly.com/badges/d23b6cf7-05bd-4dc4-8882-119d3d5cb3c4"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="View Unity Junior Programmer credential"
+          >
+            <span aria-hidden="true">↗</span>
+          </a>
         </article>
-        <article class="resume-card">
-          <span class="resume-label">Certification</span>
-          <h3>Unity Essentials</h3>
-          <a href="https://www.credly.com/badges/f80f1ff4-5a88-40d6-b1dd-df3f8f46e713" target="_blank" rel="noopener noreferrer">View credential ↗</a>
+        <article class="resume-card resume-card-small">
+          <div>
+            <span class="resume-label">Certification</span>
+            <h3>Unity Essentials</h3>
+          </div>
+
+          <a
+            class="credential-link"
+            href="https://www.credly.com/badges/f80f1ff4-5a88-40d6-b1dd-df3f8f46e713"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="View Unity Essentials credential"
+          >
+            <span aria-hidden="true">↗</span>
+          </a>
         </article>
       </div>
     </section>
@@ -552,6 +575,15 @@ section {
   grid-column: span 2;
 }
 
+.resume-card-small {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  min-height: 50px;
+  padding: 12px 18px;
+}
+
 .resume-label,
 .resume-date {
   color: @accentColor;
@@ -578,6 +610,30 @@ section {
   font-size: 0.86rem;
   text-decoration: underline;
   text-underline-offset: 4px;
+}
+
+.resume-card-small h3 {
+  margin: 2px 0 0;
+  font-size: 1.15rem;
+  line-height: 1.2;
+}
+
+.resume-card-small .credential-link {
+  display: grid;
+  flex: 0 0 36px;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  margin: 0;
+  border: 1px solid @lineColor;
+  color: @accentColor;
+  font-size: 1.1rem;
+  text-decoration: none;
+}
+
+.resume-card-small .credential-link:hover,
+.resume-card-small .credential-link:focus-visible {
+  border-color: @accentColor;
 }
 
 .contact-section {
@@ -613,7 +669,6 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border-top: 1px solid @lineColor;
 }
 
 .contact-links a {
@@ -625,6 +680,11 @@ section {
   border-bottom: 1px solid @lineColor;
   font-weight: 700;
 }
+
+.contact-links a:first-child {
+  border-top: 1px solid @lineColor;
+}
+
 
 .contact-links i {
   width: 24px;
