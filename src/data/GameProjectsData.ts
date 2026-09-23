@@ -55,7 +55,7 @@ export default [
         year: "2025",
         highlight: "1st place — IEPRJ inter-class competition",
         featured: true,
-        breakdown: "Clockwork Warden is a 2.5D hack-and-slash roguelike inspired by Hades and built in Unity. Players descend into the Movement as the Clockwork Warden, detaining deviant Clockworks while developing distinct weapon builds. Our team, Lethal Tempo, built the game over the course of a year.",
+        breakdown: "Clockwork Warden is a 2.5D hack-and-slash roguelike inspired by Hades and built in Unity. Players descend into the Movement as the Clockwork Warden, detaining deviant Clockworks while creating distinct weapon builds. Our team built the game over the course of a year.",
         videoUrl: "https://www.youtube.com/embed/dvfld1waako",
         roleItems: [
             "Led UI/UX, sound systems, and sprite implementation",
@@ -125,7 +125,7 @@ export default [
         year: "2026",
         highlight: "Capstone project",
         featured: true,
-        breakdown: "Balete Falls is a 3D survival-horror game based on the myth of the Kapre. Players take the role of Hazel Pineda, the lead engineer of BBDC, and explore an abandoned park where a Kapre is rumored to lurk. The game is being developed by Dark Harvest Studios as our capstone project.",
+        breakdown: "Balete Falls is a 3D survival-horror game based on the myth of the Kapre. Players take the role of Hazel Pineda, the lead engineer of BBDC, and explore an abandoned park where a Kapre is rumored to lurk. The game was developed as our capstone project.",
         videoUrl: "https://www.youtube.com/embed/EOL0abgK6Ms",
         roleItems: [
             "Led UI/UX development",

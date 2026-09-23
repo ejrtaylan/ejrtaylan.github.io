@@ -2,11 +2,11 @@
   <div class="home-page">
     <section class="hero page-shell" aria-labelledby="hero-title">
       <div class="hero-copy">
-        <p class="section-kicker">Game developer · UI/UX · Gameplay · Audio</p>
+        <p class="section-kicker">Game developer · UI/UX · Gameplay · Narratives</p>
         <h1 id="hero-title">Hi There!</h1>
         <p class="hero-intro">
-          I’m EJ Taylan, a game-development student and generalist based in Laguna, Philippines.
-          I work across Unity and Unreal Engine, with a focus on player-facing systems and experiences.
+          I’m EJ Taylan, a game-development student based in Laguna, Philippines.
+          I work with both Unity and Unreal Engine, with a focus on player-facing systems and experiences.
         </p>
         <div class="hero-actions">
           <a class="button button-primary" href="#/" @click.prevent="scrollToSection('projects')">View my work</a>
@@ -76,9 +76,9 @@
           <p class="section-kicker">How I contribute</p>
           <h2 id="skills-title" class="section-title">A generalist with a player-first lens.</h2>
           <p class="section-intro">
-            I enjoy working where implementation and player experience meet: turning design intent into readable interfaces,
-            reliable systems, and satisfying moment-to-moment feedback.
-            I like working on player-facing systems. 
+            Most of my experience has been with player-facing systems—gameplay mechanics, UI, and sprite and animation integration.
+            I enjoy taking a design idea and figuring out how to make it work in-game, especially when it comes to making moment-to-moment gameplay feel good.
+            I’m also interested in narratives, game lore, and level design.
           </p>
         </div>
 
